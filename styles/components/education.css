@@ -1,0 +1,71 @@
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+}
+
+.education .education-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 1rem;
+
+}
+
+.education-row .education-column {
+    flex: 1 1 40rem;
+}
+
+.education-column .title {
+    position: relative;
+    display: inline-block;
+    font-size: var(--size-xl);
+    margin: 0 0 1.5rem;
+}
+
+.education-column .education-box {
+    position: relative;
+    border-left: .2rem solid var(--clr-bleu);
+}
+
+.education-box .education-content {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.education-box .education-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--clr-bleu);
+    border-radius: 50%;
+}
+
+.education-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--clr-bleu);
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.education-content .content .year {
+    font-size: var(--size-xl);
+    color: var(--clr-bleu);
+    padding-bottom: .2rem;
+}
+
+.education-content .content h3 {
+    font-size: var(--size-xl);
+}
+
+.education-content .content p {
+    font-size: var(--size-l);
+    padding-top: .5rem;
+}

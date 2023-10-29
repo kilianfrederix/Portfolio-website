@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+  <title>dev server</title>
+</head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about"> About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Experience</a>
+          </li>
+          <li>
+            <a class="header__link" href="#education">My Journey</a>
+          </li>
+          <li>
+            <a class="header__link" href="#work">Projects</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="#">Resume</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd" />
+          </svg>
+
+        </button>
+      </nav>
+    </header>
+    <!-- mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li> 
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li> 
+            <a class="mobile-nav__link" href="#featured">Experience</a>
+          </li>
+          <li> 
+            <a class="mobile-nav__link" href="#education">My Journey</a>
+          </li>
+          <li> 
+            <a class="mobile-nav__link" href="#work">Projects</a>
+          </li>
+          <li> 
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button  class="mobile-nav__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end of mobile navigation -->
+    <main>
+      <section class="home container">
+        <img  class="home__img" src="/faceshot.png" alt="Profile Picture">
+        <h2 class="home__subtitle">Hi I'm Kilian</h2>
+        <h1 class="home__title">FULL-STACK <br> WEB DEVELOPER.</h1>
+        <p class="home__description">
+          Lorem ipsum dolor sit amet <strong>Frontend / Fullstack</strong> consectetur adipisicing elit.
+          Beatae quae incidunt nesciunt rerum dolor consectetur magnam,
+          in eius deserunt excepturi quam, <strong>UI/UX</strong> temporibus voluptatum optio
+          facere repellat cum. Incidunt, nostrum deserunt.
+        </p>
+        <a class="home__btn btn" href="#contact">Reach out</a>
+      </section>
+      <section class="about container section" id="about">
+        <div class="about__content">
+          <h2 class="about__title">About Me</h2>
+          <p class="about__description">
+            Hello I'm Kilian, a <strong>Frontend/Fullstack web developer</strong>
+            based in Belgium/Limburg.
+            Lorem ipsum dolor sit ametconsectetur adipisicing elit. Molestiae, quam.
+          </p>
+          <p class="about__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum nobis architecto necessitatibus!
+          </p>
+          <p class="about__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Debitis dolore temporibus odit quis totam
+            <a>deadlock</a>
+            ipsam voluptas tempora itaque libero inventore!
+          </p>
+          <hr class="about__hr">
+          <h3 class="about__subtitle">My Skills</h3>
+          <div class="skills">
+            <div class="skills__row">
+              <div class="skills__column">
+                <div class="skills__box">
+                  <div class="skills__content">
+                    <div class="progress">
+                      <h3>HTML <span>90%</span></h3>
+                      <div class="bar"><span></span></div>
+                    </div>
+
+                    <div class="progress">
+                      <h3>MySQL <span>70%</span></h3>
+                      <div class="bar"><span></span></div>
+                    </div>
+
+                    <div class="progress">
+                      <h3>JavaScript <span>25%</span></h3>
+                      <div class="bar"><span></span></div>
+                    </div>
+                  </div>
+                  <div class="skills__content">
+                    <div class="progress">
+                      <h3>CSS <span>90%</span></h3>
+                      <div class="bar"><span></span></div>
+                    </div>
+
+                    <div class="progress">
+                      <h3>Python <span>70%</span></h3>
+                      <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                      <h3>PHP <span>25%</span></h3>
+                      <div class="bar"><span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img  class="about__img lazy loading" src="https://fakeimg.pl/720x720" data-src="/IMG_1369.jpeg" alt="profile picture">
+        </div>
+      </section>
+      <section class="featured container section" id="featured">
+        <h3 class="featured__subtitle">Featured project</h3>
+        <div class="featured__wrapper">
+          <h2 class="featured__title">Full-Stack Portfolio</h2>
+          <a class="featured__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+            </svg>
+          </a>
+        </div>
+        <p class="featured__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci provident,
+          labore delectus velit nulla consequatur perferendis consequuntur assumenda
+          molestias dolorem inventore sit corporis distinctio ex. Ratione doloribus
+          facere ipsam tempora praesentium ex rerum corrupti aut eius architecto.
+          Quas, laudantium accusamus.
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Tech Stack</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info">CSS</li>
+              <li class="featured__info">HTML</li>
+              <li class="featured__info">JavaScript</li>
+              <li class="featured__info">GIT-BASH</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Project tech</h3>
+            <p class="featured__info">Full-Stack Developer</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">August 2023 - present</p>
+          </div>
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x968" data-src="/home.png" alt="portfolio 1">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x968" data-src="/about.png" alt="portfolio 2">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x968" data-src="/featured project.png" alt="profile card">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x968" data-src="/featured project pictures 1.png" alt="work in progress">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x968" data-src="/featured project pictures 2.png" alt="work in progress">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x968" data-src="/education.png" alt="work in progress">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x968" data-src="/work.png" alt="work in progress">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x968" data-src="/work 2.png" alt="work in progress">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x968" data-src="/work 3.png" alt="work in progress">
+          </div>
+          <div class="featured__img-wrapper">
+            <img class="lazy loading" src="https://fakeimg.pl/1920x968" data-src="/work in progress.png" alt="work in progress">
+          </div>
+        </div>
+      </section>
+      <section class="education container section" id="education">
+        <h2 class="heading">My <span>Journey</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="education-row">
+          <div class="education-column">
+            <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
+
+            <div class="education-box">
+              <div class="education-content">
+                <div class="content">
+                  <div class="year"><i class='bx bxs-calendar'></i> 2021 -2022</div>
+                  <h3>the third grade seventh year. (BSO)</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores recusandae esse nam magnam fuga eligendi id ipsa vel sit
+                    tenetur temporibus, quo quasi expedita quaerat odit deserunt.</p>
+                </div>
+              </div>
+
+              <div class="education-content">
+                <div class="content">
+                  <div class="year"><i class='bx bxs-calendar'></i> 2022 -2023</div>
+                  <h3>diploma BAP.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores recusandae esse nam magnam fuga eligendi id ipsa vel sit
+                    tenetur temporibus, quo quasi expedita quaerat odit deserunt.</p>
+                </div>
+              </div>
+
+              <div class="education-content">
+                <div class="content">
+                  <div class="year"><i class='bx bxs-calendar'></i> 2023 -2024</div>
+                  <h3>diploma FUW.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores recusandae esse nam magnam fuga eligendi id ipsa vel sit
+                    tenetur temporibus, quo quasi expedita quaerat odit deserunt.</p>
+                </div>
+              </div>
+
+              <span class="animate scroll" style="--i:3;"></span>
+            </div>
+          </div>
+
+          <div class="education-column">
+            <h3 class="title">Experience<span class="animate scroll" style="--i:5;"></span></h3>
+
+            <div class="education-box">
+              <div class="education-content">
+                <div class="content">
+                  <div class="year"><i class='bx bxs-calendar'></i> 2021 - 2022</div>
+                  <h3>care internship seventh year. (BSO)</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores recusandae esse nam magnam fuga eligendi id ipsa vel sit
+                    tenetur temporibus, quo quasi expedita quaerat odit deserunt.</p>
+                </div>
+              </div>
+
+              <div class="education-content">
+                <div class="content">
+                  <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2023</div>
+                  <h3>BAP adult education.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores recusandae esse nam magnam fuga eligendi id ipsa vel sit
+                    tenetur temporibus, quo quasi expedita quaerat odit deserunt.</p>
+                </div>
+              </div>
+
+              <div class="education-content">
+                <div class="content">
+                  <div class="year"><i class='bx bxs-calendar'></i> 2023 - 2024</div>
+                  <h3>FUW adult education.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Asperiores recusandae esse nam magnam fuga eligendi id ipsa vel sit
+                    tenetur temporibus, quo quasi expedita quaerat odit deserunt.</p>
+                </div>
+              </div>
+
+              <span class="animate scroll" style="--i:6;"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work container section" id="work">
+        <h2 class="work__title">Projects</h2>
+        <P class="work__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laudantium.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, hic.
+          Lorem ipsum dolor sit amet.
+        </P>
+        <div class="work__container">
+
+          <!-- project 1 -->
+          <h3 class="work__project-title">Portfolio 1</h3>
+          <div class="work__img-wrapper work__image1">
+            <img class="lazy loading" src="https://fakeimg.pl/900x900" data-src="/portfolio 1.png" alt="portfolio 1 website">
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle"> Portfolio 1</h3>
+            <p class="work__project-description1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Eius tempore atque rem vitae eligendi asperiores consectetur omnis iusto cum? Molestiae.
+            </p>
+            <p class="work__project-description2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quis nesciunt illum enim eius? Reiciendis,
+              ab, velit adipisci incidunt eos eius assumenda, repudiandae dicta tempora veniam harum laudantium fugit
+              aliquam.
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+
+          <!-- project 2 -->
+          <h3 class="work__project-title">Portfolio 2</h3>
+          <div class="work__img-wrapper work__image2">
+            <img class="lazy loading" src="https://fakeimg.pl/900x900" data-src="/portfolio 2.png" alt="portfolio 2 website">
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Portfolio 2</h3>
+            <p class="work__project-description1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Eius tempore atque rem vitae eligendi asperiores consectetur omnis iusto cum? Molestiae.
+            </p>
+            <p class="work__project-description2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quis nesciunt illum enim eius? Reiciendis,
+              ab, velit adipisci incidunt eos eius assumenda, repudiandae dicta tempora veniam harum laudantium fugit
+              aliquam.
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+
+          <!-- project 3 -->
+          <h3 class="work__project-title">Profile card</h3>
+          <div class="work__img-wrapper work_image3">
+            <img class="lazy loading" src="https://fakeimg.pl/900x900" data-src="/profile card.png" alt="profile card website">
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">Profile card</h3>
+            <p class="work__project-description1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Eius tempore atque rem vitae eligendi asperiores consectetur omnis iusto cum? Molestiae.
+            </p>
+            <p class="work__project-description2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quis nesciunt illum enim eius? Reiciendis,
+              ab, velit adipisci incidunt eos eius assumenda, repudiandae dicta tempora veniam harum laudantium fugit
+              aliquam.
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+
+          <!-- project 4 -->
+          <h3 class="work__project-title">work in progress</h3>
+          <div class="work__img-wrapper work__image4">
+            <img class="lazy loading" src="https://fakeimg.pl/900x900" data-src="/work in progress square.png" alt="work in progress">
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle">work in progress</h3>
+            <p class="work__project-description1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Eius tempore atque rem vitae eligendi asperiores consectetur omnis iusto cum? Molestiae.
+            </p>
+            <p class="work__project-description2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quis nesciunt illum enim eius? Reiciendis,
+              ab, velit adipisci incidunt eos eius assumenda, repudiandae dicta tempora veniam harum laudantium fugit
+              aliquam.
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+
+          <!-- project 5 -->
+          <h3 class="work__project-title">work in progress</h3>
+          <div class="work__img-wrapper work__image5">
+            <img class="lazy loading" src="https://fakeimg.pl/900x900" data-src="/work in progress square.png" alt="work in progress">
+          </div>
+          <div class="work__project work__content5">
+            <h3 class="work__project-subtitle">work in progress</h3>
+            <p class="work__project-description1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Eius tempore atque rem vitae eligendi asperiores consectetur omnis iusto cum? Molestiae.
+            </p>
+            <p class="work__project-description2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quis nesciunt illum enim eius? Reiciendis,
+              ab, velit adipisci incidunt eos eius assumenda, repudiandae dicta tempora veniam harum laudantium fugit
+              aliquam.
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+
+          <!-- project 6 -->
+          <h3 class="work__project-title">work in progress</h3>
+          <div class="work__img-wrapper work__image6">
+            <img class="lazy loading" src="https://fakeimg.pl/900x900" data-src="/work in progress square.png" alt="work in progress">
+          </div>
+          <div class="work__project work__content6">
+            <h3 class="work__project-subtitle">work in progress</h3>
+            <p class="work__project-description1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Eius tempore atque rem vitae eligendi asperiores consectetur omnis iusto cum? Molestiae.
+            </p>
+            <p class="work__project-description2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quis nesciunt illum enim eius? Reiciendis,
+              ab, velit adipisci incidunt eos eius assumenda, repudiandae dicta tempora veniam harum laudantium fugit
+              aliquam.
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact container section" id="contact">
+        <h2 class="contact__title">Get In Contact</h2>
+        <p class="contact__description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Quod aliquam recusandae molestias nemo odio illo, repellat eius distinctio optio expedita.
+          Qui, iusto dolorem veritatis quis fuga magnam sapiente id mollitia!
+        </p>
+        <a class="contact__btn btn" href="mailto:kilianfrederix@gmail.com" target="_blank">Reach Out</a>
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Kilian Frederix ~</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
